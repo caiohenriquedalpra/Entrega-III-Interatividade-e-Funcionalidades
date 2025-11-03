@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#app-content {
+    padding: 20px;
+    min-height: 500px;
+}
+
+input.error, textarea.error {
+    border: 2px solid #ff4d4d; 
+    background-color: #ffe6e6;
+}
+
+.error-message {
+    color: #cc0000;
+    font-size: 0.9em;
+    margin-top: -10px; 
+    margin-bottom: 10px;
+    display: block;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+}
