@@ -10,6 +10,12 @@ const loadContent = () => {
     
     appContent.innerHTML = pageContent;
 
+    const pageHeading = appContent.querySelector('h2');
+    if (pageHeading) {
+        pageHeading.tabIndex = -1;
+        pageHeading.focus();
+    }
+
     if (path === 'produtos') {
         const productListContainer = document.getElementById('products-list');
         if (productListContainer) {
