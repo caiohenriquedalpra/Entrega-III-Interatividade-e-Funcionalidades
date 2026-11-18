@@ -1,8 +1,10 @@
 import { setupRouter } from './router.js';
 import { validateForm } from './formValidator.js';
+import { setupAccessibilityControls } from './accessibility.js';
 
 const init = () => {
     setupRouter(); 
+    setupAccessibilityControls();
     
     window.addEventListener('hashchange', setupFormListener);
     setupFormListener();
