@@ -47,7 +47,7 @@ test("accepts a form when required, email and minimum length rules pass", () => 
   assert.equal(result.errors.size, 0);
 });
 
-test("shows and clears the required-field error", () => {
+test("shows the required-field error", () => {
   const name = field({ id: "name", required: true });
   const result = runValidation([name]);
   assert.equal(result.valid, false);
